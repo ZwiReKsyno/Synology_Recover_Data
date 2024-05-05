@@ -1,0 +1,52 @@
+v1.1.13
+- Changed the location of .rkey files for decrypting volumes from hard coded to a variable.
+- Minor bug fix to avoid possible cryptvol already exists message causing script to exit.
+
+v1.1.12
+- Added support for encrypted volumes.
+- Added check if volume is already mounted.
+- Bug fix for when no volumes are found (if drives aren't plugged in or powered on).
+
+v1.0.11
+- Bug fix for "Operation not permitted" when trying to unmount volume from GUI.
+- Bug fix for "Failed to mount volume" error when mount succeeded.
+- Bug fix for "The volume is now mounted" when mount failed.
+
+v1.0.10
+- Improved message at end on where to locate your volume to access your data.
+- Bug fix for SHR storage pool with single volume support.
+
+v1.0.9
+- Changed to Ubuntu 19.10 because in Ubuntu 22.04.4 LTS mdadm does not work with DSM's superblock location.
+  - The change to Ubuntu 19.10 required installing curl for the script's new version check to work.
+- Changed to support single drives.
+- Added message that mounted volume is read only.
+- Bug fix for always saying "Failed to mount volume" even when volume mounted correctly.
+
+v1.0.8
+- Added check if there's a newer version of the script available.
+
+v0.0.7-beta
+- Minor bug fix (forgot to stop script if there are no RAID arrays that need assembling).
+
+v0.0.6-beta
+- Now checks if there are RAID arrays that need assembling before continuing.
+
+v0.0.5-beta
+- Changed from using `apt list --installed` to `apt-cache show`.
+
+v0.0.4-beta
+- Only apt-get install if package is not installed.
+- Only apt-get update once when first package installed.
+- Minor shell output improvements.
+
+v0.0.3-beta
+- Minor improvements.
+
+v0.0.2-beta
+- Bug fix for the default mount path: mount_path="/home/ubuntu"
+- Bug fix to stop the script if mdadm failed to install.
+- Changed to only install mdadm because lvm2 and btrfs-progs are included in Ubuntu.
+
+v0.0.1-beta
+- First release.

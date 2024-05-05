@@ -72,7 +72,7 @@ https://kb.synology.com/en-id/DSM/tutorial/How_can_I_recover_data_from_my_DiskSt
 
 ### Настройка в Ubuntu
 
-1. Откройте Firefox на панели инструментов, перейдите по адресу и загрузите zip-файл https://tinyurl.com/synorecover
+1. Откройте Firefox на панели инструментов, перейдите по адресу и [загрузите zip-файл](https://github.com/ZwiReKsyno/Synology_Recover_Data/raw/main/syno_recover_data.7z)
 2.Откройте «Файлы» на панели инструментов и нажмите «Загрузки», щелкните правой кнопкой мыши zip-файл и выберите «Извлечь».
 3. Щелкните правой кнопкой мыши файл syno_restore_data.sh и выберите «Свойства».
     - Нажмите Разрешения.
